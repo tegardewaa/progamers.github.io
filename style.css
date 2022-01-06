@@ -1,66 +1,190 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Libre+Franklin:wght@500&family=Poppins&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing:  border-box;
+body {
+ font-family: "Trebuchet MS";
 }
-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background: #34495e;
-}
-.wrapper{
-    display: flex;
-}
-.wrapper .Teks-diam{
-    color:#fff;
-    font-size: 60px;
-    font-weight: 400;
-}
-.wrapper .Teks-berjalan{
-    margin-left: 15px;
-    height: 90px;
-    line-height: none;
-    overflow: hidden;
-}
-.Teks-berjalan{
-    list-style: none;
-    color:#e74c3c;
-    font-size: 60px;
-    font-weight: 500;
-    position: relative;
-    top: 0;
-    animation: slide 12s step(4) infinite;
-}
-@keyframes slide{
-    100%{
-        top: -360px;
-    }
-}
-.Teks-berjalan li span{
-    position: relative;
-    margin: 5px 0;
-    line-height: 90px;
-}
-.Teks-berjalan li span::after{
-    position: absolute;
-    content: "";
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: #34495e;
-    border-left: 2px solid  #e74c3c;
-    animation: typing 3s steps(10) infinite;
+/* Gunakan property list-style untuk menghilangkan bullet dari tag <li> */
+li {
+ list-style: none;
 
-    }
-    @keyframes typing{
-    40%,60%{
-        left: calc(100%+ 30px);
-    }
-    100%{
-        left: 0;
-    }
 }
+
+.kop {
+	background-color: #2f3542;
+	color:#ffffff;
+	padding: 8px;
+}
+
+/* Gantikan background-color header ke #f7f2b4, dan height ke 90px */
+.header {
+ background-color:#000000;
+ color: black;
+ height: 90px;
+}
+
+/* Gantikan font-size milik header-logo ke 36px, dan property float ke left */
+.header-logo1 {
+ 
+ float: left;
+ border-style: solid;
+ border-width: 5px;
+ border-color: #2f3542;
+ border-radius: 8px;
+ margin:auto;
+ margin-top: 4px;
+ margin-left: 5px;
+ 
+}
+.header-logo2 {
+ font-size: 35px;
+ float: right;
+ padding: 20px 40px;
+ color:#ffffff;
+ background-color:#747d8c;
+ border-style:solid;
+ border-radius:8px;
+ border-color:#2f3542;
+ padding-top:13px;
+ padding-left:15px 15px;
+ border-width: 5px;
+ margin-right:5px;
+ margin-top:3px;
+}
+
+.header-list1 li{
+	float: left;
+	font-size: 22px;
+	padding: 3px;
+	margin-top: 30px;
+	margin-left: 20px;
+	border-style: solid;
+	border-radius: 8px;
+	border-color: #2f3542;
+	color:#FFFFFF;
+	background-color: #747d8c;
+}
+li:hover {
+	color:#747d8c;
+	background-color:#192a56;
+	border-color:#FFFFFF;
+}
+
+.main {
+ padding:100px 80px;
+}
+
+.copy-container h1{
+	font-size:100px;
+	text-align:center;
+}
+
+.copy-container h2 {
+ font-size: 60px;
+ text-align:center;
+}
+
+.copy-container span{
+	color:#ff4757;
+}
+
+.copy-container h3{
+	color:black;
+	text-align: left;
+}
+
+.contents {
+ height: 100px;
+ margin-top: 100px;
+}
+
+.contents2 {
+background-color: white;
+height:700px;
+margin-top:100px;
+
+}
+.contents2 h3{
+color: red;
+}
+.contents-item {
+ border-radius:8px;
+ float: left;
+ margin-right: 40px;
+ 
+}
+
+.contents-item img{
+border-radius: 8px;
+display:block;
+padding:1px;
+border:1px solid #14236C;
+margin-left: auto;
+margin-right: auto;
+
+}
+.contents-item p:hover {
+	-webkit-transform: scale(0.95);
+	transform:scale(0.95);
+}
+
+.contents-item img:hover {
+	-webkit-transform: scale(0.95);
+	transform:scale(0.95);
+}
+
+.contents-item p{
+ font-size: 20px;
+ margin-top: 30px;
+ text-align: center;
+ background-color:#747d8c;
+ border-radius: 7px;
+ color:#FFFFFF;
+ border-color: black;
+ border-width:2px;
+ border-style: solid;
+}
+
+.INFO {
+ background-color:white;
+ height: 300px;
+ padding-top : 120px;
+}
+.INFO h1{
+font-size:24px;
+color:black;
+}
+.INFO h2{
+font-size:18px;
+color:black;
+}
+.INFO h3{
+font-size:24px;
+color:black;
+}
+.INFO h4{
+font-size:18px;
+color:black;
+} 
+
+.footer {
+ background-color: #000;
+ color:#fff;
+ height: 120px;
+ padding: 40px;
+ margin-top:auto;
+ margin-bottom:auto;
+ float:middle;
+}
+.footer-logo{
+	font-size:120px;
+	float:left;
+}
+.footer-copyright{
+	float: center;
+	text-align: center;
+	padding-top: 50px;
+	color: #FFC312;
+}
+.footer-list{
+			float:right;
+}
+.footer-list li{
+		padding-bottom:0px;
